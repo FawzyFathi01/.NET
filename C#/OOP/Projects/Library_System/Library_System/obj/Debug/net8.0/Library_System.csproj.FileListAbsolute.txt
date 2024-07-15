@@ -1,0 +1,14 @@
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\OOP\Projects\Library_System\Library_System\bin\Debug\net8.0\Library_System.exe
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\OOP\Projects\Library_System\Library_System\bin\Debug\net8.0\Library_System.deps.json
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\OOP\Projects\Library_System\Library_System\bin\Debug\net8.0\Library_System.runtimeconfig.json
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\OOP\Projects\Library_System\Library_System\bin\Debug\net8.0\Library_System.dll
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\OOP\Projects\Library_System\Library_System\bin\Debug\net8.0\Library_System.pdb
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\OOP\Projects\Library_System\Library_System\obj\Debug\net8.0\Library_System.GeneratedMSBuildEditorConfig.editorconfig
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\OOP\Projects\Library_System\Library_System\obj\Debug\net8.0\Library_System.AssemblyInfoInputs.cache
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\OOP\Projects\Library_System\Library_System\obj\Debug\net8.0\Library_System.AssemblyInfo.cs
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\OOP\Projects\Library_System\Library_System\obj\Debug\net8.0\Library_System.csproj.CoreCompileInputs.cache
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\OOP\Projects\Library_System\Library_System\obj\Debug\net8.0\Library_System.dll
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\OOP\Projects\Library_System\Library_System\obj\Debug\net8.0\refint\Library_System.dll
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\OOP\Projects\Library_System\Library_System\obj\Debug\net8.0\Library_System.pdb
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\OOP\Projects\Library_System\Library_System\obj\Debug\net8.0\Library_System.genruntimeconfig.cache
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\OOP\Projects\Library_System\Library_System\obj\Debug\net8.0\ref\Library_System.dll
