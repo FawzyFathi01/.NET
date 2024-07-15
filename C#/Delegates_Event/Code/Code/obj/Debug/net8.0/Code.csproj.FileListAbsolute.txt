@@ -1,0 +1,15 @@
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\Delegates_Event\Code\Code\bin\Debug\net8.0\Code.exe
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\Delegates_Event\Code\Code\bin\Debug\net8.0\Code.deps.json
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\Delegates_Event\Code\Code\bin\Debug\net8.0\Code.runtimeconfig.json
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\Delegates_Event\Code\Code\bin\Debug\net8.0\Code.dll
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\Delegates_Event\Code\Code\bin\Debug\net8.0\Code.pdb
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\Delegates_Event\Code\Code\obj\Debug\net8.0\Code.GeneratedMSBuildEditorConfig.editorconfig
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\Delegates_Event\Code\Code\obj\Debug\net8.0\Code.AssemblyInfoInputs.cache
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\Delegates_Event\Code\Code\obj\Debug\net8.0\Code.AssemblyInfo.cs
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\Delegates_Event\Code\Code\obj\Debug\net8.0\Code.csproj.CoreCompileInputs.cache
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\Delegates_Event\Code\Code\obj\Debug\net8.0\Code.sourcelink.json
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\Delegates_Event\Code\Code\obj\Debug\net8.0\Code.dll
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\Delegates_Event\Code\Code\obj\Debug\net8.0\refint\Code.dll
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\Delegates_Event\Code\Code\obj\Debug\net8.0\Code.pdb
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\Delegates_Event\Code\Code\obj\Debug\net8.0\Code.genruntimeconfig.cache
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\Delegates_Event\Code\Code\obj\Debug\net8.0\ref\Code.dll
