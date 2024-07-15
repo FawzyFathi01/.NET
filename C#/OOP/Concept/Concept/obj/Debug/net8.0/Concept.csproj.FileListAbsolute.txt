@@ -1,0 +1,15 @@
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\OOP\Concept\Concept\bin\Debug\net8.0\Concept.exe
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\OOP\Concept\Concept\bin\Debug\net8.0\Concept.deps.json
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\OOP\Concept\Concept\bin\Debug\net8.0\Concept.runtimeconfig.json
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\OOP\Concept\Concept\bin\Debug\net8.0\Concept.dll
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\OOP\Concept\Concept\bin\Debug\net8.0\Concept.pdb
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\OOP\Concept\Concept\obj\Debug\net8.0\Concept.GeneratedMSBuildEditorConfig.editorconfig
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\OOP\Concept\Concept\obj\Debug\net8.0\Concept.AssemblyInfoInputs.cache
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\OOP\Concept\Concept\obj\Debug\net8.0\Concept.AssemblyInfo.cs
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\OOP\Concept\Concept\obj\Debug\net8.0\Concept.csproj.CoreCompileInputs.cache
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\OOP\Concept\Concept\obj\Debug\net8.0\Concept.sourcelink.json
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\OOP\Concept\Concept\obj\Debug\net8.0\Concept.dll
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\OOP\Concept\Concept\obj\Debug\net8.0\refint\Concept.dll
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\OOP\Concept\Concept\obj\Debug\net8.0\Concept.pdb
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\OOP\Concept\Concept\obj\Debug\net8.0\Concept.genruntimeconfig.cache
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\OOP\Concept\Concept\obj\Debug\net8.0\ref\Concept.dll
