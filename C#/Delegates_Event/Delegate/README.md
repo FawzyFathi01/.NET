@@ -1,5 +1,5 @@
 
-# DELEgate
+# Delegate
 
 ## What is a Delegate?
 
