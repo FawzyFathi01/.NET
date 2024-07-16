@@ -7,7 +7,7 @@
 
 
 //#1 
-//  1 - [] Review Delegate + PlayCode 
+//  1 - [✔] Review Delegate + PlayCode 
 //  2 - [] IMprove Delegate 
 //  3 - [] Event 
 //  4 - [] توثيق الملاحظات على GITHUB 
@@ -16,11 +16,6 @@
 //#2 مصادر التعلم 
 // 1- عصام - المهدى - Piece - ChatGpt 
 
-
-
-
-using System.Threading.Channels;
-
 namespace Code
 {
     internal class Program
@@ -28,13 +23,7 @@ namespace Code
         static void Main(string[] args)
         {
             AppDelegate.FilterEmp();
-
-
         }
-
-
-
-
         #region Delegate
         //#introDaction Delegate 
         // delegate 
@@ -57,18 +46,18 @@ namespace Code
                 // Invoking 
                 del(1, 2);
             }
-            public static void AppFilter()
+            public static void AppFilterBasic()
             {
                 List<int> list = new List<int>() { 1, 10, 15, 40, 30, 70, 35, 20, 55, 80, 12, 100 };
 
                 // Delegate poining
                 CheckEvenOdd ch = (a) => a % 2 != 0;
                 // Invoking
-                Filter(list, ch);
+                FilterList(list, ch);
                 Console.WriteLine("#######################");
                 // DelegateMultiCasting
                 ch += (a) => a % 2 == 0;
-                Filter(list, ch);
+                FilterList(list, ch);
             }
 
             public static void FilterEmp()
@@ -97,7 +86,13 @@ namespace Code
 
         // Delegate Defintion
         delegate bool CheckEvenOdd(int a);
-        static void Filter(List<int> list, CheckEvenOdd ch)
+
+        // Delegate Defintion
+        delegate bool CheckEmp(Employee emp);
+
+
+
+        static void FilterList(List<int> list, CheckEvenOdd ch)
         {
             foreach (var item in list)
             {
@@ -121,9 +116,6 @@ namespace Code
             }
         }
 
-
-
-        delegate bool CheckEmp(Employee emp);
         class Employee
         {
             public int Id { get; set; }
@@ -143,9 +135,6 @@ namespace Code
 
         }
 
-
-
         #endregion
-
     }
 }
