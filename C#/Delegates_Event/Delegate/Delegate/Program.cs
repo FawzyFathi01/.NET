@@ -14,7 +14,6 @@
 
 /*
  * 
- * 
  * What is a Delegate?
  * A delegate is a type that defines a method signature, and it can hold a reference to a method 
  * with that signature. Delegates are similar to function pointers in C and C++, but they are type-safe and secure.
@@ -46,6 +45,9 @@ namespace Delegate
     {
         static void Main(string[] args)
         {
+
+            Console.WriteLine("Check");
+
             AppDelegate.FilterEmp();
         }
 
