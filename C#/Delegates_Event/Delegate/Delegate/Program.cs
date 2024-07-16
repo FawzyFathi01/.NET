@@ -5,16 +5,40 @@
 // ذاكر فترات قصيرة و قست من الراحة 
 // ابتعد عن المشتتات تذكر اهمية الوقت 
 
-
 //#1 
 //  1 - [✔] Review Delegate + PlayCode 
-//  2 - [] IMprove Delegate 
+//  2 - [✔] IMprove Delegate 
 //  3 - [] Event 
-//  4 - [] توثيق الملاحظات على GITHUB 
+//  4 - [] توثيق الملاحظات على GITHUB  تم توثيق Delegate 
 
 
-//#2 مصادر التعلم 
-// 1- عصام - المهدى - Piece - ChatGpt 
+/*
+ * 
+ * 
+ * What is a Delegate?
+ * A delegate is a type that defines a method signature, and it can hold a reference to a method 
+ * with that signature. Delegates are similar to function pointers in C and C++, but they are type-safe and secure.
+ *
+ * Key Characteristics of Delegates
+ * Type Safety: Delegates are type-safe, meaning the method signature must match the delegate signature.
+ * Flexibility: Delegates can point to both static and instance methods.
+ * Chainable: Multiple methods can be assigned to a delegate, creating a chain of methods.
+ * 
+ * delegate :- Object than points to Method ai changed at run time  
+ *     1- Identfied Delegate  
+ *     2- poining to Method
+ *     3- Invoking Delegate 
+ *
+ *   # Delegate inLine Anonmys Method ====> delegate (int a ,int b) {return a+b;} 
+ *   # Lampda Expration               ====> (int a,int b) => a+b
+ *
+ *   # Delegate chains (MultiCasting)
+ *   # Generic Delegate 
+ *   - Func <in,in...,out> return any data type  , Action<in,in....>return void , Predicate <in,in,....> return bool
+ *
+ */
+
+
 
 namespace Delegate
 {
@@ -22,27 +46,14 @@ namespace Delegate
     {
         static void Main(string[] args)
         {
-            // AppDelegate.FilterEmp();
-
-            Action<int, int> del = (a, b) => Console.WriteLine($"RES : {a + b}");
-            del(10, 4);
-
+            AppDelegate.FilterEmp();
         }
+
+
+
         #region Delegate
-        //#introDaction Delegate 
-        // delegate :- Object than points to Method ai changed at run time  
-        // 1- Defenation 
-        // 2- poining to Method
-        // 3- Invoking
-
-        //# Delegate inLine Anonmys Method ====> delegate (int a ,int b) {return a+b;} 
-        //# Lampda Expration               ====> (int a,int b) => a+b
-
-        // Delegate chains (MultiCasting)
-
         class AppDelegate
         {
-
             public static void BasicDelegate()
             {
                 // poining 
@@ -54,18 +65,16 @@ namespace Delegate
             {
                 List<int> list = new List<int>() { 1, 10, 15, 40, 30, 70, 35, 20, 55, 80, 12, 100 };
 
-
-
-
                 // Delegate poining
-                //CheckEvenOdd ch = (a) => a % 2 != 0;
-                Func<int, bool> CheckEvenOdd = (a) => a % 2 == 0;
+                //CheckEvenOdd ch = (a) => a % 2 != 0;                // Require Define Delegate 
+                //Func<int, bool> CheckEvenOdd = (a) => a % 2 == 0;  // Return any Data type 
+                Predicate<int> PredicateCheck = (a) => a % 2 == 0;  // Return Bool only 
                 // Invoking
-                FilterList(list, CheckEvenOdd);
+                FilterList(list, PredicateCheck);
                 Console.WriteLine("#######################");
                 // DelegateMultiCasting
-                CheckEvenOdd += (a) => a % 2 == 0;
-                FilterList(list, CheckEvenOdd);
+                PredicateCheck += (a) => a % 2 == 0;
+                FilterList(list, PredicateCheck);
             }
 
             public static void FilterEmp()
@@ -109,7 +118,7 @@ namespace Delegate
 
 
 
-        static void FilterList(List<int> list, Func<int, bool> ch)
+        static void FilterList(List<int> list, Predicate<int> ch)
         {
             foreach (var item in list)
             {
