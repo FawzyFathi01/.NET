@@ -1,4 +1,3 @@
-
 # Delegate
 
 ## What is a Delegate?
