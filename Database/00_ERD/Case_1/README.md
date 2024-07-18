@@ -18,17 +18,17 @@ A big company has decided to store information about its projects and employees 
 ### Entities and Attributes
 
 1. **Employee**
-   - Attributes: SSN, Birth Date, Gender, Name (Fname, Lname)
-
+   - Attributes: SSN, Birth Date, Gender, Name (Fname, Lname)     - SSN
+    
 2. **Department**
    - Attributes: DName, DNUM (unique), Locations
-   
+
 3. **Project**
-   - Attributes: PName, PNumber (unique), Location, City
-     
+   - Attributes: Name (unique), Gender, Birth Date
+
 4. **Dependent**
    - Attributes: Name (unique), Gender, Birth Date
-     
+
 ### Relationships
 
 - **Employee Work in Department**: (M:1) 
@@ -56,4 +56,7 @@ A big company has decided to store information about its projects and employees 
 
 ![E-R Diagram](image.jpg)
 
-The diagram shows how things are connected and what each thing has. It also shows how many of each thing are connected, like if it's one-to-one, one-to-many, or many-to-many.
+The Diagram shows:
+- Entities with their attributes
+- Relationships between entities
+- Cardinality and participation between entities
