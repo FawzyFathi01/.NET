@@ -1,18 +1,10 @@
 ﻿//Goal ===>  {✔,X}
 
-//#1 DeterMaine Topics  
-// [✔] Review Delegate  
-// [✔] Events _ Observer Pattern
-// [✔] EventHandler _ EventArgs
-
-//#3[]  توثيق على Github 
-
-
 // Notes 
 // - KeyWord event to solve 1- Direct Invoke outside class 2- Not use = but use += or -= 
 // - EventHandler --> Generic , Non Generic 
-// - Non Generic --> (object , EventArgs )
-// Generic --> (object , T) :- T : anyTypes 
+//      - Non Generic --> (object , EventArgs )
+//      - Generic --> (object , T) :- T : anyTypes 
 // Event :- enable a class or object to notify other Classes or objects when somthing of interest occurs 
 
 
@@ -24,16 +16,9 @@ namespace Events
     {
         static void Main(string[] args)
         {
-          AppYouTube app = new AppYouTube();    
+            AppYouTube app = new AppYouTube();
             app.StartApp();
         }
-
-
-
-
-   
-        
-
     }
 
 
@@ -68,7 +53,7 @@ namespace Events
 
     #region Observer_Pattern
 
-    delegate void DelSub(string title);
+
     class AppYouTube()
     {
         public void StartApp()
@@ -144,7 +129,7 @@ namespace Events
 
     //Event_handeler 
 
-    #region Example_1
+    #region Example_1_Review 
     class Vedio_Infos : EventArgs
     {
         public string Name { set; get; }
