@@ -1,0 +1,9 @@
+ITI has decided to store information about its Students and curriculums in a database. ITI has wisely chosen to hire you as a database designer. Prepare an E-R diagram for ITI that describes its activities according to The following Description:
+=>ITI has a number of students in different departments(tracks), each student has St_id(unique),studentName(Fname,Lname),St_age,st_address
+=>Each department has dept_id(unique), dep_name
+=>Students takes many Courses, each course has crs_id, crs_name, crs_duration and crs_Description 
+=>Student has a grade in each course
+=>Each department contains a set of instructor and each instructor in located in one department, each instructor has ins_id, ins_name, ins_salary, ins_hourRate, ins_bouns,ins_address
+=>For each Department, there is always one instructor assigned to manage that Department and each manager has a hiring Date
+=>Instructor may teach many courses and each course may be conducted by many instructors, each instructor has evaluation in each course
+=>Course is classified under one topic, each topic may have many courses, and each topic has top_name and top_id 
