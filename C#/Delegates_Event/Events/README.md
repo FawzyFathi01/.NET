@@ -1,142 +1,183 @@
 
-# Event and Observer Pattern in C#
+# Event and Observer Patterns in C#
 
-## Introduction
+## Event 
+The Event in C# is a way to notify multiple subscribers about events that occur within an object. It leverages delegates and is integral to the .NET framework's event-driven programming model.
 
-### Event Pattern
-The Event pattern in C# is a way to notify multiple subscribers about events that occur within an object. It leverages delegates and is integral to the .NET framework's event-driven programming model.
-
-### Observer Pattern
+## Observer Pattern
 The Observer pattern is a behavioral design pattern where an object, known as the subject, maintains a list of dependents, called observers, and notifies them of any state changes, usually by calling one of their methods. This pattern is particularly useful in scenarios where an event should trigger updates in multiple parts of an application.
 
-## Implementation
+## EventHandler
+The `EventHandler` delegate is a predefined delegate type in C# used for handling events. It has two main forms: non-generic and generic.
 
-This example demonstrates both the Event and Observer patterns through a simulation of a YouTube channel where subscribers get notified when a new video is uploaded.
+### Non-Generic EventHandler
+The non-generic `EventHandler` delegate represents a method that handles an event and takes two parameters: the source of the event and an `EventArgs` object, which contains the event data.
 
-### Code Explanation
+### Generic EventHandler
+The generic `EventHandler<TEventArgs>` delegate is a more flexible version, allowing the event data to be of any type specified by the `TEventArgs` parameter. This enables more specific event data types to be used.
 
-The provided code consists of three main parts:
+### Key Points
+- **Keyword `event`**: 
+  - Prevents direct invocation of the event outside the class.
+  - Enforces the use of `+=` and `-=` for adding or removing event handlers.
+- **EventHandler**:
+  - Non-generic: `(object, EventArgs)`
+  - Generic: `(object, TEventArgs)` where `TEventArgs` can be any type.
 
-1. **Program Class**: The entry point of the application.
-2. **Youtyoub_Chanel Class**: Represents the YouTube channel that notifies subscribers about new video uploads.
-3. **Subscriber Class**: Represents the subscribers that receive notifications about new video uploads.
-
-### Program Class
-
-The `Program` class contains the `Main` method, which starts the application by calling `Youtyoub_Chanel.StartApp()`.
-
-```csharp
-namespace Events
-{
-    internal class Program
-    {
-        static void Main(string[] args)
-        {
-            Youtyoub_Chanel.StartApp();
-        }
-    }
-}
-```
-
-### Youtyoub_Chanel Class
-
-The `Youtyoub_Chanel` class simulates a YouTube channel.
-
-1. **Event Definition**: The event `del` is declared using a generic `Action<string>` delegate.
-2. **UploadVideo Method**: This method simulates uploading a video and notifies subscribers.
-3. **StartApp Method**: This method demonstrates how subscribers can subscribe to a channel and how the event can be invoked.
+## Example Observer Pattern 
 
 ```csharp
-class Youtyoub_Chanel
-{
-    public static void StartApp()
-    {
-        // Example 1
-        Console.WriteLine("this is Example 1 ");
-        Youtyoub_Chanel ch = new Youtyoub_Chanel();
-        Subscriber s1 = new Subscriber();
-        Subscriber s2 = new Subscriber();
-        Subscriber s3 = new Subscriber();
-
-        s1.Subscribe(ch);
-        s2.Subscribe(ch);
-        s3.Subscribe(ch);
-        Console.Write("Enter Title Video : ");
-        ch.UploadVideo(Console.ReadLine());
-
-        // Example 2
-        Console.WriteLine("this is Example 2 ");
-        Youtyoub_Chanel y = new Youtyoub_Chanel();
-        Subscriber s_1 = new Subscriber();
-        Subscriber s_2 = new Subscriber();
-        Subscriber s_3 = new Subscriber();
-
-        s_1.Subscribe(y);
-        s_2.Subscribe(y);
-        s_3.Subscribe(y);
-
-        // Incorrect way to invoke delegate
-        y.del.Invoke("fawzy");
-
-        // Incorrect way to assign delegate (should use +=, not =)
-        y.del = (s) => Console.WriteLine("Happy");
-    }
-
-    // Event declaration
+class YouTube_Channel
+{ 
+    // Method to Upload Video, Delegate pointing to Subscriber 
+    // public event DelSub del;
     public event Action<string> del;
+    // To Solve 2 Problem: 1- Not Invoking Directly outside Class, Not = but += 
 
-    // Method to upload video and notify subscribers
-    public void UploadVideo(string title)
-    {
+    public void UploadVideo(string title) {
         Console.WriteLine($"Upload Video ({title})");
         del.Invoke(title);
-    }
+    } 
 }
-```
 
-### Subscriber Class
-
-The `Subscriber` class represents a subscriber to the YouTube channel.
-
-1. **Subscribe Method**: Subscribes the subscriber to the channel.
-2. **WatchVideo Method**: Method that gets called when a new video is uploaded.
-
-```csharp
 class Subscriber
 {
+    // Method to Watch Video upload 
+
     public int Id { get; }
     static int count = 0;
 
-    public Subscriber()
-    {
-        count++;
-        Id = count;
-    }
+    public Subscriber() { count++; Id = count; }
 
-    public void Subscribe(Youtyoub_Chanel chanel)
-    {
-        chanel.del += this.WatchVideo;
+    public void Subscribe(YouTube_Channel channel) {
+        channel.del += this.WatchVideo;
     }
-
-    public void WatchVideo(string title)
-    {
-        Console.WriteLine($"Id {Id}, I am watching video ({title})");
+    public void WatchVideo(string title) {
+        Console.WriteLine($"Id {Id}, I am Watching Video ({title})");
     }
 }
 ```
 
-### Key Points
+In this example:
+- `YouTube_Channel` class has an event `del` of type `Action<string>`, which is invoked when a new video is uploaded.
+- `Subscriber` class subscribes to the `del` event and reacts by watching the video, displaying a message with the video title.
 
-1. **Delegate Definition**: A delegate `DelSub` is defined but not used in the event declaration. Instead, `Action<string>` is used for simplicity.
-2. **Event Declaration**: The event `del` is declared using `Action<string>` to handle video upload notifications.
-3. **Event Invocation**: The `UploadVideo` method raises the event by invoking `del`.
-4. **Subscription**: Subscribers use the `Subscribe` method to attach their `WatchVideo` method to the event.
-5. **Multicasting**: Multiple subscribers can attach to the same event, demonstrating the multicast capability of delegates.
+## EventHandler Example 1
 
-### Improvements and Notes
+```csharp
+class Video_Info : EventArgs
+{
+    public string Name { get; set; }
+    public int Duration { get; set; }
+}
 
-1. **Avoid Direct Invocation**: Events should not be invoked directly outside their class. This is enforced by using the `event` keyword.
-2. **Proper Subscription**: Use the `+=` operator to add methods to an event, not `=`, to avoid overwriting existing subscribers.
-3. **Anonymous Methods and Lambda Expressions**: The code includes comments on using anonymous methods and lambda expressions for inline delegate definitions.
+class YoutubeChannel
+{
+    public string Name { get; set; }
+    public event EventHandler<Video_Info> Action;
+   
+    public void UploadVideo(Video_Info vd)
+    {
+        vd.Name = "Fawzy";
+        vd.Duration = 30;
+        Console.WriteLine("Upload Video!!");
+        Action(this, vd);
+    }
+}
 
-By understanding this example, you can grasp how events and the Observer pattern are implemented in C#. You can expand this by adding more functionality, handling edge cases, and experimenting with different scenarios to deepen your mastery.
+class SubscriberX
+{
+    public void Subscribe(YoutubeChannel y)
+    {
+        y.Action += this.WatchVideo;   
+    }
+
+    public void WatchVideo(object ob, Video_Info vd)
+    {
+        YoutubeChannel y = (YoutubeChannel)ob;  
+        Console.WriteLine($"I am Watching: {vd.Name}	, {vd.Duration} minutes");
+    }
+}
+```
+
+## EventHandler Example 2
+
+```csharp
+class AppStock
+{
+    public void StartApp()
+    {
+        Stock st = new Stock("Google");
+        HandleStock hs = new HandleStock();
+        hs.Subscribe(st);
+
+        Console.Write("Enter Price of Stock: ");
+        st.Price = decimal.Parse(Console.ReadLine());
+
+        int t = 4;
+        while (t > 0)
+        {
+            Console.Write("Enter percent to change Stock Price: ");
+            decimal a = decimal.Parse(Console.ReadLine());
+            st.ChangePrice(a);
+            t--;
+            Console.WriteLine();
+        }
+        Console.WriteLine("Finished");
+
+        Console.ReadKey();
+    }
+}
+
+class HandleStock
+{
+    public void Subscribe(Stock st)
+    {
+        st.EventHandlerChangeStockPrice += HandleChangePrice;
+    }
+    public void HandleChangePrice(object st, decimal oldPrice)
+    {
+        Stock stock = (Stock)st;
+
+        Console.WriteLine($"Price of Stock Before Change: ${oldPrice}");
+        Console.Write($"Price of Stock After Change: $");
+
+        if (stock.Price > oldPrice) Console.ForegroundColor = ConsoleColor.Green;
+        else if (stock.Price < oldPrice) Console.ForegroundColor = ConsoleColor.Red;
+        else Console.ForegroundColor = ConsoleColor.Gray;
+
+        Console.WriteLine(stock.Price);
+        Console.ForegroundColor = ConsoleColor.White;
+    }
+}
+
+class Stock
+{
+    private string name;
+    private decimal price;
+
+    public event EventHandler<decimal> EventHandlerChangeStockPrice;
+    public decimal Price { set { price = value; } get { return price; } }
+    public string Name { get => name; }
+
+    public Stock(string name)
+    {
+        this.name = name;
+    }
+
+    public void ChangePrice(decimal percent)
+    {
+        decimal oldPrice = price;
+        Console.WriteLine($"Old: {oldPrice}");
+        this.price += (this.Price * percent / 100);
+        EventHandlerChangeStockPrice(this, oldPrice);
+    }
+}
+```
+
+In this example:
+- `AppStock` initializes the stock price and simulates price changes.
+- `HandleStock` subscribes to stock price changes and handles the change event.
+- `Stock` class raises the event when its price changes, notifying all subscribers.
+
+These examples demonstrate how events and the observer pattern work together to create a flexible and dynamic system for handling changes and notifications.

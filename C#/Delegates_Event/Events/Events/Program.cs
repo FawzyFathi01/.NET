@@ -5,9 +5,17 @@
 // [✔] Events _ Observer Pattern
 // [✔] EventHandler _ EventArgs
 
-//#2 DeterMaine Resources (Piece of Cake Dev) + Chat Gpt 
-
 //#3[]  توثيق على Github 
+
+
+// Notes 
+// - KeyWord event to solve 1- Direct Invoke outside class 2- Not use = but use += or -= 
+// - EventHandler --> Generic , Non Generic 
+// - Non Generic --> (object , EventArgs )
+// Generic --> (object , T) :- T : anyTypes 
+// Event :- enable a class or object to notify other Classes or objects when somthing of interest occurs 
+
+
 
 
 namespace Events
@@ -16,11 +24,18 @@ namespace Events
     {
         static void Main(string[] args)
         {
-            
-           A_Sender.StartApp();
-
+          AppYouTube app = new AppYouTube();    
+            app.StartApp();
         }
+
+
+
+
+   
+        
+
     }
+
 
 
     #region Review_Delegate 
@@ -54,10 +69,9 @@ namespace Events
     #region Observer_Pattern
 
     delegate void DelSub(string title);
-    class YouTube_Channel
+    class AppYouTube()
     {
-
-        public static void StartApp()
+        public void StartApp()
         {
             Console.WriteLine("this is Example 1 ");
             YouTube_Channel ch = new YouTube_Channel();
@@ -82,18 +96,21 @@ namespace Events
             s_2.Subscribe(y);
             s_3.Subscribe(y);
 
+            // Notes 
+            /*
             // InVoke Direct this is ( X )
-            y.del.Invoke("fawzy");
+            //y.del.Invoke("fawzy");
 
-            // this is Problem (unSubscrib for old SubScriber !!) Not use = , but use += 
-            y.del = (s) => Console.WriteLine("Happy");
+            //this is Problem (unSubscrib for old SubScriber !!) Not use = , but use += 
+            //y.del = (s) => Console.WriteLine("Happy");
 
             // To Solve this is Problem Add keyWord for Delegate (event) to issue 
-
+            */
         }
-
+    }
+    class YouTube_Channel
+    { 
         // Method to Uploud Video , Delegate to poining Subscriber 
-
         // public event DelSub del;
         public event Action<string> del;
         // To Solve 2 Problem 1- Not Invok Direct out Class , Not = , but += 
@@ -102,9 +119,8 @@ namespace Events
             Console.WriteLine($"Upload Video ( {title} )");
             del.Invoke(title);
         } 
-
-
     }
+
     class Subscriber
     {
         // Method to Watch Video upload 
@@ -125,78 +141,135 @@ namespace Events
 
     #endregion
 
-    #region Eevent_Handler
 
-    // Review obServer Pattern 
+    //Event_handeler 
 
-    class VedioINFO : EventArgs
+    #region Example_1
+    class Vedio_Infos : EventArgs
     {
-        public string Title { set; get; }
-        public int decuration { set; get; }
-    }
-
-    class A_Sender
-    {
-
-        public static void StartApp()
-        {
-            A_Sender sender = new A_Sender();
-            B_Resever b_Resever = new B_Resever();
-            B_Resever b_Resever1 = new B_Resever();
-
-            b_Resever.subscribe(sender);
-            b_Resever1.subscribe(sender);
-
-            VedioINFO vd = new VedioINFO();
-
-            Console.WriteLine("this is First Exampl ");
-            Console.Write("Enter Name Sender : ");
-            sender.Name = Console.ReadLine();
-
-            Console.Write("Enter Title Vedio : ");
-            vd.Title = Console.ReadLine();
-
-            Console.Write("Enter decuration : ");
-            vd.decuration = int.Parse(Console.ReadLine());
-
-            sender.UploadVedio(vd);
-
-        }
-
-        // Methode to Invok Event 
         public string Name { set; get; }
-        //public event Action<string> action;
-        public event EventHandler<VedioINFO> handelUploadVedio; 
-
-        public void UploadVedio (VedioINFO vd) {
-            Console.WriteLine("Upload Vedio");
-            //  action.Invoke(title);
-           // vd.Title = "Fawzy"; vd.decuration = 30; this.Name = "Fawzy";
-            handelUploadVedio(this,vd);
-        }
-
-
+        public int dcuration { set; get; }
     }
 
-    class B_Resever
+    class YoutubeChannel
     {
-        // To Receve Event 1-subscribe  2- hendelEvent  
-
-
-        public void subscribe(A_Sender a)
+        public string Name { set; get; }
+        public event EventHandler<Vedio_Infos> Action;
+     
+        // Event To Solve 1-invoke outSide class 2-Not = but use += or -= 
+        
+        
+        public void UploadVideo(Vedio_Infos vd)
         {
-            // a.action += this.wathchVedio;
-            a.handelUploadVedio += wathchVedio;
+            vd.Name = "Fawzy";
+            vd.dcuration = 30;
+            Console.WriteLine("Upload Video !!");
+            Action(this, vd);
         }
-        public void wathchVedio(object oj , VedioINFO vd)
+
+
+    }
+
+    class SubscriberX
+    {
+        public void Subscribe(YoutubeChannel y)
         {
-            A_Sender a = (A_Sender)oj;
-            Console.WriteLine($"Watch this {vd.Title}\t , decuration {vd.decuration} from {a.Name}");
+            y.Action += this.WatchVedio;   
+        }
+
+        public void WatchVedio(object ob , Vedio_Infos vd)
+        {
+            YoutubeChannel y = (YoutubeChannel)ob;  
+            Console.WriteLine($"i am Watch : {vd.Name}\t,{vd.dcuration}");
+        }
+    }
+    #endregion
+
+    #region Example_2 
+
+    class AppStock
+    {
+        public void StartApp()
+        {
+            Stock st = new Stock("Google");
+            HandelStock hs = new HandelStock();
+            hs.Subscribe(st);
+
+            Console.Write("Enter Price of Stock : ");
+            st.Price = decimal.Parse(Console.ReadLine());
+
+            int t = 4;
+            while (t > 0)
+            {
+                Console.Write("Enter percent to change StockPrice : ");
+                decimal a = decimal.Parse(Console.ReadLine());
+                st.ChangePrice(a);
+                t--;
+                Console.WriteLine();
+            }
+            Console.WriteLine("Finished");
+
+            Console.ReadKey();
         }
 
     }
 
+    class HandelStock
+    {
+
+        public void Subscribe (Stock st)
+        {
+            st.EventHandelerChangeStockPrice += HandelChangePrice;
+        }
+        public void HandelChangePrice(object st, decimal oldPrice)
+        {
+            Stock stock = (Stock)st;
+
+            Console.WriteLine($"Price of Stock Before Change :- ${oldPrice}");
+            Console.Write($"Price of Stock After Change :- $");
+
+
+            if (stock.Price > oldPrice) Console.ForegroundColor = ConsoleColor.Green;
+            else if (stock.Price < oldPrice) Console.ForegroundColor = ConsoleColor.Red;
+            else Console.ForegroundColor = ConsoleColor.Gray;
+
+
+            Console.WriteLine(stock.Price);
+            Console.ForegroundColor = ConsoleColor.White;
+
+        }
+    }
+
+    class Stock
+    {
+        private string name;
+        private decimal price;
+
+        public event EventHandler<decimal> EventHandelerChangeStockPrice;
+        public decimal Price { set { price = value; } get { return price; } }
+        public string Name { get => name; }
+
+        public Stock (string name)
+        {
+            this.name=name;
+        }
+
+
+
+        public void ChangePrice(decimal percent)
+        {
+            decimal oldprice = price;
+            Console.WriteLine($"old : {oldprice}");
+            this.price += (this.Price * percent);
+            EventHandelerChangeStockPrice(this, oldprice);
+        }
+
+
+    }
 
     #endregion
+
+
+
 
 }
