@@ -1,5 +1,5 @@
 
-# Event and Observer Patterns in C#
+# Event, Observer Patterns and EventHandler in C#
 
 ## Event 
 The Event in C# is a way to notify multiple subscribers about events that occur within an object. It leverages delegates and is integral to the .NET framework's event-driven programming model.
@@ -169,7 +169,7 @@ class Stock
     {
         decimal oldPrice = price;
         Console.WriteLine($"Old: {oldPrice}");
-        this.price += (this.Price * percent / 100);
+        this.price += (this.Price * percent);
         EventHandlerChangeStockPrice(this, oldPrice);
     }
 }
