@@ -170,7 +170,7 @@ namespace Events
     }
     #endregion
 
-    #region Example_2 
+    #region Example_2_Stock 
 
     class AppStock
     {
