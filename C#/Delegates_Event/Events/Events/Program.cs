@@ -16,7 +16,7 @@ namespace Events
     {
         static void Main(string[] args)
         {
-            AppYouTube app = new AppYouTube();
+            AppStock app = new AppStock();
             app.StartApp();
         }
     }
@@ -209,7 +209,7 @@ namespace Events
         public void HandelChangePrice(object st, decimal oldPrice)
         {
             Stock stock = (Stock)st;
-
+            Console.WriteLine($"Welecom To Stock {stock.Name}");
             Console.WriteLine($"Price of Stock Before Change :- ${oldPrice}");
             Console.Write($"Price of Stock After Change :- $");
 
