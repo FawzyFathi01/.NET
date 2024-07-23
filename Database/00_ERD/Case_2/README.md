@@ -61,7 +61,7 @@ ITI has decided to store information about its Students and curriculums in a dat
 
 ## E-R Diagram
 
-![E-R Diagram](image.jpg)
+![E-R Diagram](image.PNG)
 
 The diagram shows:
 - Entities with their attributes
