@@ -1,5 +1,8 @@
 # Database Schema Mapping Documentation
 
+## Entity-Relationship Diagram (ERD)
+![ERD](ERD.PNG)
+
 ## Relational Schema Mapping
 ![Mapping](MAPPING.PNG)
 
@@ -87,9 +90,6 @@
   - `Stu_id` references a student, and `cours_id` references a course.
   - `Grade` indicates the student's grade in the course.
 
-
-## Entity-Relationship Diagram (ERD)
-![ERD](ERD.PNG)
 
 ### Conclusion
 The mapping diagram converts the conceptual ERD into a logical relational schema, capturing all entities, attributes, and relationships accurately.
