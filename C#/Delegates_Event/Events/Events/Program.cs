@@ -1,5 +1,4 @@
 ﻿//Goal ===>  {✔,X}
-
 // Notes 
 // - KeyWord event to solve 1- Direct Invoke outside class 2- Not use = but use += or -= 
 // - EventHandler --> Generic , Non Generic 
@@ -20,8 +19,6 @@ namespace Events
             app.StartApp();
         }
     }
-
-
 
     #region Review_Delegate 
 
@@ -125,9 +122,6 @@ namespace Events
     }
 
     #endregion
-
-
-    //Event_handeler 
 
     #region Example_1_Review 
     class Vedio_Infos : EventArgs
@@ -253,6 +247,7 @@ namespace Events
     }
 
     #endregion
+
 
 
 

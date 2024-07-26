@@ -573,14 +573,3 @@ namespace Concept
 
 
 }
-/*
-ASP.NET 
-    - C# (OOP - Collection - Linq ) + EF core  
-    - Sql 
-    - Design Pattern Solid 
-    - Web API 
-    - MVC 
-    - Rezore 
-    - Blazor 
-    - .Net .... 
-*/
