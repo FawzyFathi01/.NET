@@ -2,33 +2,38 @@
 
 ## First Note 
 
-	![Alt text](image/image1.png)
+![Alt text](image/image1.png)
 
-	![Alt text](image/image2.png)
+![Alt text](image/image2.png)
 
-	![Alt text](image/image3.png)
+![Alt text](image/image3.png)
 
 
 ## Quire
 
 - Top (2) --> First 2 Row 
 - Top (3) with ties  
-- NewId () --> Random ID Unique 
-![Alt text](image/image4.png)
-	
-- Execution Order :- From - join - on - where - group - having - select - order by - top 
-	![Alt text](image/image5.png)
 
-- Sub Quire with From ==> use As 
-	![Alt text](image/image6.png)
+![Alt text](image/image4.png)
+- NewId () --> Random ID Unique 
+
+![Alt text](image/image5.png)	
+- Execution Order :- From - join - on - where - group - having - select - order by - top 
+
+![Alt text](image/image6.png)
+- Sub Quire with From ==> use As
+
+![Alt text](image/image7.png)
 - DB Objects :- Table - View - Function - Rule - Constraint *ServerName.DBName.SchemaName.ObjectName*
-	![Alt text](image/image7.png)
+
+![Alt text](image/image8.png)
 - Select .. Into (DDL) :- Create New Table 
-	![Alt text](image/image8.png)
+
+![Alt text](image/image9.png)
 - Insert Based Select 
-	![Alt text](image/image9.png)
+
+![Alt text](image/image10.png)
 - Select with only Agg_Function 
-	![Alt text](image/image10.png)
 
 ## Ranking Function 
 
