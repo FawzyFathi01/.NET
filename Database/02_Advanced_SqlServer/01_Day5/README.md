@@ -14,7 +14,7 @@
 - Top (2) --> First 2 Row 
 - Top (3) with ties  
 - NewId () --> Random ID Unique 
-	![Alt text](image/image4.png)
+![Alt text](image/image4.png)
 	
 - Execution Order :- From - join - on - where - group - having - select - order by - top 
 	![Alt text](image/image5.png)
