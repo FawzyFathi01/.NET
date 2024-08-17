@@ -2,11 +2,11 @@
 
 ## First Note 
 
-![Alt text](image/image1.png)
+	![Alt text](image/image1.png)
 
-![Alt text](image/image2.png)
+	![Alt text](image/image2.png)
 
-![Alt text](image/image3.png)
+	![Alt text](image/image3.png)
 
 
 ## Quire
@@ -14,21 +14,21 @@
 - Top (2) --> First 2 Row 
 - Top (3) with ties  
 - NewId () --> Random ID Unique 
-	![[Pasted image ٢٠٢٤٠٨١٦٠٨٥٠٣٣.png]]
+	![Alt text](image/image4.png)
 	
 - Execution Order :- From - join - on - where - group - having - select - order by - top 
-	![[Pasted image ٢٠٢٤٠٨١٦٠٨٥١٥٣.png]]
+	![Alt text](image/image5.png)
 
 - Sub Quire with From ==> use As 
-	![[Pasted image ٢٠٢٤٠٨١٦٠٨٥٨١٣.png]]
+	![Alt text](image/image6.png)
 - DB Objects :- Table - View - Function - Rule - Constraint *ServerName.DBName.SchemaName.ObjectName*
-	![[Pasted image ٢٠٢٤٠٨١٦٠٩٠٦٣٥.png]]
+	![Alt text](image/image7.png)
 - Select .. Into (DDL) :- Create New Table 
-	![[Pasted image ٢٠٢٤٠٨١٦٠٩٠٩٤٧.png]]
+	![Alt text](image/image8.png)
 - Insert Based Select 
-	![[Pasted image ٢٠٢٤٠٨١٦٠٩١٥١٤.png]]
+	![Alt text](image/image9.png)
 - Select with only Agg_Function 
-	![[Pasted image ٢٠٢٤٠٨١٦٠٩٢٠٠٧.png]]
+	![Alt text](image/image10.png)
 
 ## Ranking Function 
 
@@ -37,7 +37,7 @@
 - **NTiles( Group )**
 - **Rank()**
 
-![[Pasted image ٢٠٢٤٠٨١٧٠٩٣٠٤٣.png]]
+![Alt text](image/image11.png)
 ### Second highest salary Without repetition *Row_Number()*
 ```sql
 Select * From (
@@ -90,7 +90,7 @@ Where G = 2;
 ```
 
 
-![[Pasted image ٢٠٢٤٠٨١٧٠٩٤٩٥١.png]]
+![Alt text](image/image12.png)
 ### Second highest salary in each department without repetition
 ```sql
 Select * From (
