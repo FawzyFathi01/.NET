@@ -2,13 +2,11 @@
 
 ## First Note 
 
-![[Pasted image ٢٠٢٤٠٨١٦٠٧٥٣٢٥.png]]
+![Alt text](image1.png)
 
-![[Pasted image ٢٠٢٤٠٨١٦٠٧٥٤٣٧.png]]
+![Alt text](image2.png)
 
-
-![[Pasted image ٢٠٢٤٠٨١٦٠٨١١١٨.png]]
-
+![Alt text](image3.png)
 
 
 ## Quire
