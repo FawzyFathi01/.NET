@@ -5,6 +5,8 @@
         static void Main(string[] args)
         {
 
+            // Scientific concept For List,ArrayList
+            // Play Method and Property for List ArrayLsit
 
 
 
@@ -14,6 +16,7 @@
         }
     }
 
+    #region GenericInterface 
     public interface IABC <T,U>
     {
         public void print(T str);
@@ -28,7 +31,7 @@
         }
     }
 
-
+    #endregion
 
 
 
