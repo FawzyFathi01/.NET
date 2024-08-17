@@ -3,7 +3,7 @@
 	#Database_Management_System :- Software Package to creation and Maintenance Computerized Database 
 	#Database_System :- (Software + Database )
 
-	![Alt text](٢٠٢٤٠٨١٦٠٦١٢٠٩.png)
+	![Alt text](image.jpg)
 
 - ERD 
 	1. Entity (Strong ,Weak)
