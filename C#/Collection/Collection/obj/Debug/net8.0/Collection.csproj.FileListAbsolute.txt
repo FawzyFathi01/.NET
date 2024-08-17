@@ -1,0 +1,15 @@
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\Collection\Collection\bin\Debug\net8.0\Collection.exe
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\Collection\Collection\bin\Debug\net8.0\Collection.deps.json
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\Collection\Collection\bin\Debug\net8.0\Collection.runtimeconfig.json
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\Collection\Collection\bin\Debug\net8.0\Collection.dll
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\Collection\Collection\bin\Debug\net8.0\Collection.pdb
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\Collection\Collection\obj\Debug\net8.0\Collection.GeneratedMSBuildEditorConfig.editorconfig
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\Collection\Collection\obj\Debug\net8.0\Collection.AssemblyInfoInputs.cache
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\Collection\Collection\obj\Debug\net8.0\Collection.AssemblyInfo.cs
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\Collection\Collection\obj\Debug\net8.0\Collection.csproj.CoreCompileInputs.cache
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\Collection\Collection\obj\Debug\net8.0\Collection.sourcelink.json
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\Collection\Collection\obj\Debug\net8.0\Collection.dll
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\Collection\Collection\obj\Debug\net8.0\refint\Collection.dll
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\Collection\Collection\obj\Debug\net8.0\Collection.pdb
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\Collection\Collection\obj\Debug\net8.0\Collection.genruntimeconfig.cache
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\Collection\Collection\obj\Debug\net8.0\ref\Collection.dll
