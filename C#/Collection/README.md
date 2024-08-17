@@ -22,6 +22,8 @@
 		![[Pasted image ٢٠٢٤٠٨١٦١٦٢٨٤٣.png]]
 
 
+
+
 ## List<T>
 
 ### 1. Generic Collection
@@ -71,3 +73,69 @@ numbers.Add(7);
 numbers.Remove(3);
 numbers.Sort();
 ```
+
+## ArrayList
+
+### 1. Non-Generic Collection
+`ArrayList` is a **non-generic** collection that can hold objects of any type. Because it stores elements as `object`, it is less type-safe.
+
+Example:
+
+```csharp
+ArrayList arrayList = new ArrayList();
+arrayList.Add(1);
+arrayList.Add("Hello");
+arrayList.Add(DateTime.Now);
+```
+
+### 2. Type Safety
+Since `ArrayList` stores elements as `object`, type checking is not enforced at compile-time. This can lead to runtime errors if elements are not cast correctly.
+
+Example:
+
+```csharp
+ArrayList arrayList = new ArrayList();
+arrayList.Add(1);
+
+int number = (int)arrayList[0]; // Explicit cast required
+// string str = (string)arrayList[0]; // This would cause a runtime error
+```
+
+### 3. Performance
+When storing value types in an `ArrayList`, boxing occurs, and unboxing is required when retrieving the values. This can impact performance, especially with large collections.
+
+Example:
+
+```csharp
+ArrayList arrayList = new ArrayList();
+arrayList.Add(42); // Boxing occurs here
+
+int value = (int)arrayList[0]; // Unboxing occurs here
+```
+
+### 4. Legacy Collection
+`ArrayList` was commonly used before C# 2.0, when generics were introduced. Today, `List<T>` is preferred for new development due to its type safety and performance benefits.
+
+## Comparison Summary
+
+- **Type Safety**: `List<T>` is type-safe (generic), while `ArrayList` is not (non-generic).
+- **Performance**: `List<T>` is generally more performant because it avoids boxing/unboxing with value types.
+- **Flexibility**: `ArrayList` can store different types, but this flexibility comes at the cost of type safety and performance.
+- **Usage**: `List<T>` is preferred for modern C# development, while `ArrayList` is considered a legacy collection.
+
+## Example Comparison
+
+```csharp
+// Using List<T>
+List<int> intList = new List<int> { 1, 2, 3 };
+intList.Add(4);
+int sum = intList[0] + intList[1]; // No casting required
+
+// Using ArrayList
+ArrayList arrayList = new ArrayList();
+arrayList.Add(1);
+arrayList.Add(2);
+int sumArrayList = (int)arrayList[0] + (int)arrayList[1]; // Casting required
+```
+
+In summary, while both `List<T>` and `ArrayList` can be used to store collections of elements, `List<T>` is generally the better choice due to its type safety, performance, and extensive support in the .NET ecosystem.
