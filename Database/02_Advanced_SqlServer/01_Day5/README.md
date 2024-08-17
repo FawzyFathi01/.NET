@@ -4,9 +4,9 @@
 
 ![Alt text](image/image1.png)
 
-![Alt text](image2.png)
+![Alt text](image/image2.png)
 
-![Alt text](image3.png)
+![Alt text](image/image3.png)
 
 
 ## Quire
