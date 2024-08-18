@@ -40,38 +40,44 @@ WHERE E.SSN IN (SELECT DISTINCT D.ESSN
 FROM Dependent D);
 
 
---#Part_3 still 10 Quire 
---7.	Display (Using Union Function)
---a.[]The name and the gender of the dependence that's gender is Female and depending on Female Employee.
---b.[]And the male dependence that depends on Male Employee.
+--#Part_3
 
-
---8.[✔]List the last name of all managers(SuperVisor) who have no dependents.(WRONG IN THIS QUIRY)
-/*
-manager [emp have name ]---> department As No Dependent 
-*/
+--7.[✔]List the last name of all managers(SuperVisor) who have no dependents.
 
 select distinct x.Fname + ' ' + x.Lname as SuperName 
 from Employee x
 inner join Employee y on y.Superssn = x.SSN
 where y.Superssn not in (select d.ESSN from dependent d );
 
+--8.[✔]Retrieve a list of employees and the projects they are working on ordered by department
+-- and within each department, ordered alphabetically by last name, first name.
 
---9.[X]For each department-- if its average salary is less than the average salary of all employees
+select e.Fname , e.Lname, p.Pname,p.Dnum
+from Employee e , Project p , Works_for w 
+where e.SSN = w.ESSn and w.Pno = p.Pnumber
+order by 4,1,2;
+
+--9.[✔]Get the full name of employees that is similar to any dependent name
+
+select CONCAT(Fname,' ',Lname)as [full name]  from Employee
+INTERSECT
+select d.Dependent_name
+from Dependent d;
+
+
+-- --#Part_4
+--10.	Display (Using Union Function)
+--a.[]The name and the gender of the dependence that's gender is Female and depending on Female Employee.
+--b.[]And the male dependence that depends on Male Employee.
+
+--11.[X]For each department-- if its average salary is less than the average salary of all employees
 -- display its number, name and number of its employees.
 -- Important 
+
 /*
 -- Display ==> (number , name) Department & CountEmployee 
 -- avg salary department < avg salary for all emp 
 */
-
-
---10.[]Retrieve a list of employees and the projects they are working on ordered by department
--- and within each department, ordered alphabetically by last name, first name.
-
-
---11.[]Get the full name of employees that is similar to any dependent name
-
 
 --DML
 --1.	In the department table insert new department called "DEPT IT" , with id 100, employee with SSN = 112233 as a manager for this department. The start date for this manager is '1-11-2006'
