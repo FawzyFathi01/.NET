@@ -1,18 +1,4 @@
-﻿//Goal ===>  {✔,X}
-
-// حدد الاجزاء اللى هتذاكرها 
-// حدد مصادر التعلم و مكان الملاحظات
-// ذاكر فترات قصيرة و قست من الراحة 
-// ابتعد عن المشتتات تذكر اهمية الوقت 
-
-//#1 
-//  1 - [✔] Review Delegate + PlayCode 
-//  2 - [✔] IMprove Delegate 
-//  3 - [] Event 
-//  4 - [] توثيق الملاحظات على GITHUB  تم توثيق Delegate 
-
-
-/*
+﻿/*
  * 
  * What is a Delegate?
  * A delegate is a type that defines a method signature, and it can hold a reference to a method 
@@ -37,19 +23,56 @@
  *
  */
 
-
-
 namespace Delegate
 {
+
+
+
     internal class Program
     {
+
+        // define Delegate with same Signature
+        // Pointing to Method 
+        // Invoke Delegate 
+
+        public delegate int DelCal(int x, int y);
+        public delegate bool prdicate(int a);
+
         static void Main(string[] args)
         {
+            DelCal del = Adding;
 
-            Console.WriteLine("Check");
+            Console.WriteLine( del(10, 5));
+            List<int> list = new List<int>();
+            list.Add(10);
+            list.Add(20);
+            list.Add(50);
+            list.Add(40);
+            list.Add(60);
+            int x = 20;
+            FillteringValues(list, (a) => a > x);
 
-            AppDelegate.FilterEmp();
+
         }
+
+        public static int Adding (int a,int b)
+        {
+            return a + b;
+        }
+
+
+
+        public static void FillteringValues (List<int> ints ,  prdicate pre)
+        {
+            foreach (var item in ints)
+            {
+                if (pre(item))
+                {
+                    Console.WriteLine(item);
+                }
+            }
+        }
+
 
 
 
@@ -164,5 +187,6 @@ namespace Delegate
         }
 
         #endregion
+    
     }
 }
