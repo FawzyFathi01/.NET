@@ -95,11 +95,4 @@
             Console.WriteLine($"{Name}, {Num} .....Stop!!");
         }
     }
-
-
-
-
-
-
-
 }
