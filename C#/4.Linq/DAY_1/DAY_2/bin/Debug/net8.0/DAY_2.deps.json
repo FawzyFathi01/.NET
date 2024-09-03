@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "DAY_2/1.0.0": {
+        "dependencies": {
+          "DAY_1": "1.0.0"
+        },
+        "runtime": {
+          "DAY_2.dll": {}
+        }
+      },
+      "DAY_1/1.0.0": {
+        "runtime": {
+          "DAY_1.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DAY_2/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DAY_1/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
