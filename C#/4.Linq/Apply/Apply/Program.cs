@@ -1,10 +1,13 @@
-﻿namespace Apply
+﻿using Shared;
+namespace Apply
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+
+            Console.WriteLine("Fawzy Ready To Day");
+
         }
     }
 }

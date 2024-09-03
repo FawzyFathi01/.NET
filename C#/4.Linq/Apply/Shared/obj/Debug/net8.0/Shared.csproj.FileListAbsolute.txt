@@ -1,0 +1,5 @@
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\4.Linq\Apply\Shared\obj\Debug\net8.0\Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\4.Linq\Apply\Shared\obj\Debug\net8.0\Shared.AssemblyInfoInputs.cache
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\4.Linq\Apply\Shared\obj\Debug\net8.0\Shared.AssemblyInfo.cs
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\4.Linq\Apply\Shared\obj\Debug\net8.0\Shared.csproj.CoreCompileInputs.cache
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\4.Linq\Apply\Shared\obj\Debug\net8.0\Shared.sourcelink.json
