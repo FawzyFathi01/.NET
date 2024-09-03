@@ -1,0 +1,15 @@
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\4.Linq\DAY_1\DAY_1\bin\Debug\net8.0\DAY_1.exe
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\4.Linq\DAY_1\DAY_1\bin\Debug\net8.0\DAY_1.deps.json
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\4.Linq\DAY_1\DAY_1\bin\Debug\net8.0\DAY_1.runtimeconfig.json
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\4.Linq\DAY_1\DAY_1\bin\Debug\net8.0\DAY_1.dll
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\4.Linq\DAY_1\DAY_1\bin\Debug\net8.0\DAY_1.pdb
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\4.Linq\DAY_1\DAY_1\obj\Debug\net8.0\DAY_1.GeneratedMSBuildEditorConfig.editorconfig
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\4.Linq\DAY_1\DAY_1\obj\Debug\net8.0\DAY_1.AssemblyInfoInputs.cache
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\4.Linq\DAY_1\DAY_1\obj\Debug\net8.0\DAY_1.AssemblyInfo.cs
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\4.Linq\DAY_1\DAY_1\obj\Debug\net8.0\DAY_1.csproj.CoreCompileInputs.cache
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\4.Linq\DAY_1\DAY_1\obj\Debug\net8.0\DAY_1.sourcelink.json
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\4.Linq\DAY_1\DAY_1\obj\Debug\net8.0\DAY_1.dll
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\4.Linq\DAY_1\DAY_1\obj\Debug\net8.0\refint\DAY_1.dll
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\4.Linq\DAY_1\DAY_1\obj\Debug\net8.0\DAY_1.pdb
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\4.Linq\DAY_1\DAY_1\obj\Debug\net8.0\DAY_1.genruntimeconfig.cache
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\4.Linq\DAY_1\DAY_1\obj\Debug\net8.0\ref\DAY_1.dll
