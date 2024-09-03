@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\00_Track .Net\\00_Project_GitHub\\.Net (Backend)\\C#\\4.Linq\\Apply\\Shared\\Shared.csproj": {}
+    "D:\\00_Track .Net\\00_Project_GitHub\\.Net (Backend)\\C#\\4.Linq\\Apply\\Shard\\Shared.csproj": {}
   },
   "projects": {
-    "D:\\00_Track .Net\\00_Project_GitHub\\.Net (Backend)\\C#\\4.Linq\\Apply\\Shared\\Shared.csproj": {
+    "D:\\00_Track .Net\\00_Project_GitHub\\.Net (Backend)\\C#\\4.Linq\\Apply\\Shard\\Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\00_Track .Net\\00_Project_GitHub\\.Net (Backend)\\C#\\4.Linq\\Apply\\Shared\\Shared.csproj",
+        "projectUniqueName": "D:\\00_Track .Net\\00_Project_GitHub\\.Net (Backend)\\C#\\4.Linq\\Apply\\Shard\\Shared.csproj",
         "projectName": "Shared",
-        "projectPath": "D:\\00_Track .Net\\00_Project_GitHub\\.Net (Backend)\\C#\\4.Linq\\Apply\\Shared\\Shared.csproj",
+        "projectPath": "D:\\00_Track .Net\\00_Project_GitHub\\.Net (Backend)\\C#\\4.Linq\\Apply\\Shard\\Shared.csproj",
         "packagesPath": "C:\\Users\\original\\.nuget\\packages\\",
-        "outputPath": "D:\\00_Track .Net\\00_Project_GitHub\\.Net (Backend)\\C#\\4.Linq\\Apply\\Shared\\obj\\",
+        "outputPath": "D:\\00_Track .Net\\00_Project_GitHub\\.Net (Backend)\\C#\\4.Linq\\Apply\\Shard\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\original\\AppData\\Roaming\\NuGet\\NuGet.Config",
