@@ -1,30 +1,11 @@
 {
   "version": 3,
   "targets": {
-    "net8.0": {
-      "LinqShared/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
-        "compile": {
-          "bin/placeholder/LinqShared.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/LinqShared.dll": {}
-        }
-      }
-    }
+    "net8.0": {}
   },
-  "libraries": {
-    "LinqShared/1.0.0": {
-      "type": "project",
-      "path": "../LinqShared/LinqShared.csproj",
-      "msbuildProject": "../LinqShared/LinqShared.csproj"
-    }
-  },
+  "libraries": {},
   "projectFileDependencyGroups": {
-    "net8.0": [
-      "LinqShared >= 1.0.0"
-    ]
+    "net8.0": []
   },
   "packageFolders": {
     "C:\\Users\\original\\.nuget\\packages\\": {}
@@ -32,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\00_Track .Net\\00_Project_GitHub\\.Net (Backend)\\C#\\4.Linq\\Apply\\Apply\\Apply.csproj",
-      "projectName": "Apply",
-      "projectPath": "D:\\00_Track .Net\\00_Project_GitHub\\.Net (Backend)\\C#\\4.Linq\\Apply\\Apply\\Apply.csproj",
+      "projectUniqueName": "D:\\00_Track .Net\\00_Project_GitHub\\.Net (Backend)\\C#\\4.Linq\\Apply\\LinqShared\\LinqShared.csproj",
+      "projectName": "LinqShared",
+      "projectPath": "D:\\00_Track .Net\\00_Project_GitHub\\.Net (Backend)\\C#\\4.Linq\\Apply\\LinqShared\\LinqShared.csproj",
       "packagesPath": "C:\\Users\\original\\.nuget\\packages\\",
-      "outputPath": "D:\\00_Track .Net\\00_Project_GitHub\\.Net (Backend)\\C#\\4.Linq\\Apply\\Apply\\obj\\",
+      "outputPath": "D:\\00_Track .Net\\00_Project_GitHub\\.Net (Backend)\\C#\\4.Linq\\Apply\\LinqShared\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\original\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -52,11 +33,7 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {
-            "D:\\00_Track .Net\\00_Project_GitHub\\.Net (Backend)\\C#\\4.Linq\\Apply\\LinqShared\\LinqShared.csproj": {
-              "projectPath": "D:\\00_Track .Net\\00_Project_GitHub\\.Net (Backend)\\C#\\4.Linq\\Apply\\LinqShared\\LinqShared.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {

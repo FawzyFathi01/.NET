@@ -1,0 +1,12 @@
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\4.Linq\Apply\LinqShared\bin\Debug\net8.0\LinqShared.deps.json
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\4.Linq\Apply\LinqShared\bin\Debug\net8.0\LinqShared.dll
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\4.Linq\Apply\LinqShared\bin\Debug\net8.0\LinqShared.pdb
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\4.Linq\Apply\LinqShared\obj\Debug\net8.0\LinqShared.GeneratedMSBuildEditorConfig.editorconfig
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\4.Linq\Apply\LinqShared\obj\Debug\net8.0\LinqShared.AssemblyInfoInputs.cache
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\4.Linq\Apply\LinqShared\obj\Debug\net8.0\LinqShared.AssemblyInfo.cs
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\4.Linq\Apply\LinqShared\obj\Debug\net8.0\LinqShared.csproj.CoreCompileInputs.cache
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\4.Linq\Apply\LinqShared\obj\Debug\net8.0\LinqShared.sourcelink.json
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\4.Linq\Apply\LinqShared\obj\Debug\net8.0\LinqShared.dll
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\4.Linq\Apply\LinqShared\obj\Debug\net8.0\refint\LinqShared.dll
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\4.Linq\Apply\LinqShared\obj\Debug\net8.0\LinqShared.pdb
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\4.Linq\Apply\LinqShared\obj\Debug\net8.0\ref\LinqShared.dll

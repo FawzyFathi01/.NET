@@ -28,8 +28,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\00_Track .Net\\00_Project_GitHub\\.Net (Backend)\\C#\\4.Linq\\Apply\\Shard\\Shared.csproj": {
-                "projectPath": "D:\\00_Track .Net\\00_Project_GitHub\\.Net (Backend)\\C#\\4.Linq\\Apply\\Shard\\Shared.csproj"
+              "D:\\00_Track .Net\\00_Project_GitHub\\.Net (Backend)\\C#\\4.Linq\\Apply\\LinqShared\\LinqShared.csproj": {
+                "projectPath": "D:\\00_Track .Net\\00_Project_GitHub\\.Net (Backend)\\C#\\4.Linq\\Apply\\LinqShared\\LinqShared.csproj"
               }
             }
           }
@@ -68,14 +68,14 @@
         }
       }
     },
-    "D:\\00_Track .Net\\00_Project_GitHub\\.Net (Backend)\\C#\\4.Linq\\Apply\\Shard\\Shared.csproj": {
+    "D:\\00_Track .Net\\00_Project_GitHub\\.Net (Backend)\\C#\\4.Linq\\Apply\\LinqShared\\LinqShared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\00_Track .Net\\00_Project_GitHub\\.Net (Backend)\\C#\\4.Linq\\Apply\\Shard\\Shared.csproj",
-        "projectName": "Shared",
-        "projectPath": "D:\\00_Track .Net\\00_Project_GitHub\\.Net (Backend)\\C#\\4.Linq\\Apply\\Shard\\Shared.csproj",
+        "projectUniqueName": "D:\\00_Track .Net\\00_Project_GitHub\\.Net (Backend)\\C#\\4.Linq\\Apply\\LinqShared\\LinqShared.csproj",
+        "projectName": "LinqShared",
+        "projectPath": "D:\\00_Track .Net\\00_Project_GitHub\\.Net (Backend)\\C#\\4.Linq\\Apply\\LinqShared\\LinqShared.csproj",
         "packagesPath": "C:\\Users\\original\\.nuget\\packages\\",
-        "outputPath": "D:\\00_Track .Net\\00_Project_GitHub\\.Net (Backend)\\C#\\4.Linq\\Apply\\Shard\\obj\\",
+        "outputPath": "D:\\00_Track .Net\\00_Project_GitHub\\.Net (Backend)\\C#\\4.Linq\\Apply\\LinqShared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\original\\AppData\\Roaming\\NuGet\\NuGet.Config",

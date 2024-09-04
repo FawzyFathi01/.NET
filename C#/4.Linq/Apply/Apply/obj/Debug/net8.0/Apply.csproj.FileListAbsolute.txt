@@ -8,12 +8,12 @@ D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\4.Linq\Apply\Apply\bin\Debu
 D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\4.Linq\Apply\Apply\bin\Debug\net8.0\Apply.runtimeconfig.json
 D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\4.Linq\Apply\Apply\bin\Debug\net8.0\Apply.dll
 D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\4.Linq\Apply\Apply\bin\Debug\net8.0\Apply.pdb
-D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\4.Linq\Apply\Apply\bin\Debug\net8.0\Shared.dll
-D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\4.Linq\Apply\Apply\bin\Debug\net8.0\Shared.pdb
-D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\4.Linq\Apply\Apply\obj\Debug\net8.0\Apply.csproj.AssemblyReference.cache
-D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\4.Linq\Apply\Apply\obj\Debug\net8.0\Apply.csproj.Up2Date
 D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\4.Linq\Apply\Apply\obj\Debug\net8.0\Apply.dll
 D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\4.Linq\Apply\Apply\obj\Debug\net8.0\refint\Apply.dll
 D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\4.Linq\Apply\Apply\obj\Debug\net8.0\Apply.pdb
 D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\4.Linq\Apply\Apply\obj\Debug\net8.0\Apply.genruntimeconfig.cache
 D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\4.Linq\Apply\Apply\obj\Debug\net8.0\ref\Apply.dll
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\4.Linq\Apply\Apply\bin\Debug\net8.0\LinqShared.dll
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\4.Linq\Apply\Apply\bin\Debug\net8.0\LinqShared.pdb
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\4.Linq\Apply\Apply\obj\Debug\net8.0\Apply.csproj.AssemblyReference.cache
+D:\00_Track .Net\00_Project_GitHub\.Net (Backend)\C#\4.Linq\Apply\Apply\obj\Debug\net8.0\Apply.csproj.Up2Date
