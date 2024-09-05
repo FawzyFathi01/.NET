@@ -8,30 +8,37 @@ namespace Apply
 
         static void Main(string[] args)
         {
-            Group_by_Department();
-
+            //Group_by_Department();
+            Basic_Inner_Join();
 
 
         }
-    
+
 
         static void Group_by_Department()
         {
             var res = emps.GroupBy(d => d.DepartmentId);
+            foreach (var item in res)
+            {
+                item.Print($"Depart ({item.Key})");
+            }
+        }
+
+
+        static void Basic_Inner_Join()
+        {
+            var res = emps.Join(deprts, e => e.DepartmentId, d => d.Id,
+                (e, d) => new EmpDeprtInfo { FullName = e.FullName, DpartName = d.Name });
 
             foreach (var item in res)
             {
-                //Console.WriteLine(item.Key);
-                //foreach (var item1 in item)
-                //{
-                //    Console.WriteLine(item1.FullName);
-                //}
-
-                item.Print($"Depart ({item.Key})");
-
+                Console.WriteLine($"FullName : {item.FullName}\tDepartName : {item.DpartName}");
             }
 
         }
+
+
+
 
 
 
