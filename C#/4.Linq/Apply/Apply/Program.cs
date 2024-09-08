@@ -13,7 +13,7 @@ namespace Apply
             // Group_and_Count();
             //Join_with_Filtering();
             // Group_and_Sum();
-            Join_Multiple_Conditions();
+            //Join_Multiple_Conditions();
 
         
 
@@ -135,7 +135,7 @@ namespace Apply
                 Console.WriteLine($"EmpName : ( {item.FullNameEmp} ), DepartName : ( {item.DepartmentName} )");
             }
 
-
+            // Read it Quary Syntax 
 
         }
 
