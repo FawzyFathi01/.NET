@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DEPI_Task_1_ADO")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+957351b758c6945f53ae3734b3618c4bd2f05d06")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+784fde0a81d0bf6dea3f5fb52f286816499343ee")]
 [assembly: System.Reflection.AssemblyProductAttribute("DEPI_Task_1_ADO")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DEPI_Task_1_ADO")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
