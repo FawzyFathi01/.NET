@@ -13,7 +13,11 @@ namespace Apply_2
             //ElementAt();
             //First();
             //Last();
-            Single();
+            //Single();
+           // TenEvenNumbers();
+            //TestEmptyList();
+            first_question();
+
         }
 
 
@@ -100,6 +104,62 @@ namespace Apply_2
 
         #endregion
 
+        #region Equality Operations
+
+        static void SequenceEqual()
+        {
+
+        }
+
+        #endregion
+
+        #region Concatenation
+
+        static void Concat()
+        {
+
+        }
+
+        #endregion
+
+
+        #region Task
+
+        static void TenEvenNumbers ()
+        {
+            var res = Enumerable.Range(1, 21).Where( x => x%2==0);
+
+            var res01 = Enumerable.Repeat(res, 3);
+
+            foreach (var item in res01)
+            {
+                //Console.Write($"{item}, ");
+                foreach (var item1 in item)
+                {
+                    Console.Write($"{item1}, ");
+                }
+                Console.WriteLine();
+            }
+        }
+
+        static void TestEmptyList()
+        {
+            var list = Enumerable.Empty<int>();
+            foreach (var item in list)
+            {
+                Console.WriteLine(item);
+            }
+        }
+
+
+
+        static void first_question()
+        {
+            var res = QuestionBank.All.First(q => q.Choices.Count() <= 2);
+            Console.WriteLine(res.Title);
+        }
+
+        #endregion
 
     }
 }
