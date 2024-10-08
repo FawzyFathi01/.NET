@@ -1,0 +1,16 @@
+﻿@model List<Student>
+<table class="table table-bordered table-hover">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>ICon</th>
+    </tr>
+@foreach (var stu in Model){
+    <tr>
+        <td>@stu.Id</td>
+        <td>@stu.Name</td>
+        <td> <img src="/Img/@stu.ImageUrl" alt="Alternate Text" style="width:80px"/></td>
+    </tr>
+
+}
+</table>

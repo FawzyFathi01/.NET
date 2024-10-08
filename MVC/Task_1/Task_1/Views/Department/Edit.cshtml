@@ -1,0 +1,34 @@
+﻿@model DepartmentEdit
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<form method="post" action="/Department/SavaEdit/@Model.Id" class="p-4">
+
+    <div class="form-group mb-3">
+        <label asp-for="Name" class="form-label">Department Name</label>
+        <input value="@Model.Name" type="text" id="Name" name="Name" class="form-control" />
+    </div>
+
+
+    <div class="form-group mb-3">
+        <label for="Id" class="form-label">Manager Name</label>
+        <select id="Id" name="Id" class="form-select">
+            @foreach (var item in Model.employeeBasicInfos)
+            {
+                <option value="@item.Id">@item.Name</option>
+            }
+            <option value="@Model.ManagerId" selected>@Model.ManagerName</option>
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save</button>
+</form>
+<br />
+<a asp-controller="Department" asp-action="Index" class="btn btn-dark">Back To List</a>
+
+
+
+

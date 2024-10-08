@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewData["Title"] = "Add";
+}
+
+<h1>Add</h1>
+
+<form method="get" action="/Department/SaveAdd">
+    <div>
+        <label>Name</label>
+        <input name="Name" id="Name" type="text" class="form form-control"/>
+    </div>
+    <input type="submit" value="Add Department" class="btn btn-primary"/>
+</form>
+
+<a href="/Department/Index" class="btn btn-dark">Back To List</a>

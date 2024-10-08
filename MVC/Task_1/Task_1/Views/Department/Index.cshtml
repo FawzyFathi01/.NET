@@ -1,0 +1,34 @@
+﻿@model List<Department>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+<a asp-controller="Department" asp-action="Add" class="btn btn-success">New Department</a>
+<br />
+<br />
+<table class="table table-bordered table-hover">
+    <tr>
+        <th>Id</th>
+        <th>Departmant Name</th>
+        <th>Manager</th>
+        <th>Action</th>
+    </tr>
+
+    @foreach(var item in Model)
+    {
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.Name</td>
+            <td>@item.Manager.Name</td>
+            <td>
+                <a asp-controller="Department" asp-action="Edit" asp-route-id="@item.Id" class="btn btn-primary">Edit</a>
+                <a asp-controller="Department" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Delete</a>
+                <a asp-controller="Department" asp-action="Employees" asp-route-id="@item.Id" class="btn btn-info">Employees</a>
+
+            </td>
+        </tr>
+    }
+
+</table>
+
